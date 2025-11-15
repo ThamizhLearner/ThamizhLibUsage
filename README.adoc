@@ -1,1 +1,11 @@
 = Thamizh Lib use cases
+Sample programs using the Thamizh library (github.com/ThamizhLearner/Thamizh).
+
+== Thamizh letters
+
+Tutorial folder: `./Letters/`
+
+== [TODO] Thamizh strings
+== [TODO] Suffix match
+== [TODO] Suffix trim
+== [TODO] Syllables

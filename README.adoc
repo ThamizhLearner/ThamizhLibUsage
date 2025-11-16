@@ -1,11 +1,34 @@
-= Thamizh Lib use cases
+= தமிழ் (Thamizh) script letter library samples
+
+== அறிமுகம் (Introduction)
 Sample programs using the Thamizh library (github.com/ThamizhLearner/Thamizh).
 
-== Thamizh letters
+Note:: The Thamizh library facilitates working entirely in the Thamizh script letter space, without getting entangled with Unicode encoding.
 
-Tutorial folder: `./Letters/`
+== Sample tutorial programs
 
-== [TODO] Thamizh strings
-== [TODO] Suffix match
-== [TODO] Suffix trim
-== [TODO] Syllables
+=== Thamizh script letters (and string of Thamizh letters)
+Tutorial: `./Letters`
+
+Introduces `script.String` and `script.Letter` abstraction models.
+
+=== விகுதி (Suffix) match and trim
+Tutorial: `./Suffixes`
+
+Introduces sub-string query and trim operations on `script.String` abstraction model.
+
+=== Syllables
+Tutorial: `./Syllables`
+
+Introduces getting syllables (_unbroken sounds_) from given `script.String`.
+
+In general, syllables describe the way words of a language are pronounced (or spelled).
+
+.Furthermore it appears that in Thamizh,
+- Spelling == Pronunciation  +
+ (_in terms of these syllabic forms_).
+
+//
+Note:: This realization helped me greatly in Thamizh comprehension.
+It made reading, speaking, listening, and even writing Thamizh possible for me.
+(_Though I am yet to gain sufficient fluency in almost all these areas of comprehension_)

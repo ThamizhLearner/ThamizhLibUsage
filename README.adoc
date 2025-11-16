@@ -7,22 +7,24 @@ Note:: The Thamizh library facilitates working entirely in the Thamizh script le
 
 == Sample tutorial programs
 
-=== Thamizh script letters (and string of Thamizh letters)
+=== 1. Thamizh script letters
+(and string of Thamizh letters)
+
 Tutorial: `./Letters`
 
 Introduces `script.String` and `script.Letter` abstraction models.
 
-=== விகுதி (Suffix) match and trim
+=== 2. விகுதி (Suffix) match and trim
 Tutorial: `./Suffixes`
 
 Introduces sub-string query and trim operations on `script.String` abstraction model.
 
-=== Syllables
+=== 3. Syllables
 Tutorial: `./Syllables`
 
 Introduces getting syllables (_unbroken sounds_) from given `script.String`.
 
-In general, syllables describe the way words of a language are pronounced (or spelled).
+In general, syllables attempt to describe the way words of a language are pronounced (or spelled).
 
 .Furthermore it appears that in Thamizh,
 - Spelling == Pronunciation  +

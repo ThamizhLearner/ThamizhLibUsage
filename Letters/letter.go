@@ -17,12 +17,11 @@ func main() {
 
 // Get each Thamizh letter from Thamizh string
 func string2letters(ustr string) {
-
 	str := script.MustDecode(ustr)
 	fmt.Printf("Thamizh string      : %s\n", str)
 
 	fmt.Println("Thamizh letters forming the Thamizh string:")
-	for letter := range str.Values() {
+	for letter := range str.Letters() {
 		fmt.Println(letter)
 	}
 }
@@ -30,10 +29,10 @@ func string2letters(ustr string) {
 func letterAnalysis(ustr string) {
 	str := script.MustDecode(ustr)
 
-	for letter := range str.Values() {
+	for letter := range str.Letters() {
 		fmt.Print(letter)
 		if letter.IsCV() {
-			consonant, vowel := letter.DetachedCV()
+			consonant, vowel := letter.SplitCV()
 			fmt.Printf(" = %v + %v", consonant, vowel)
 		}
 		fmt.Println()

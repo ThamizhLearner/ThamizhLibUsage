@@ -1,36 +1,42 @@
-= தமிழ் (Thamizh) script letter library samples
+= Thamizh (தமிழ்) script letter library samples
 
-== அறிமுகம் (Introduction)
+== Introduction (அறிமுகம்)
 Sample programs using the Thamizh library (github.com/ThamizhLearner/Thamizh).
 
 Note:: The Thamizh library facilitates working entirely in the Thamizh script letter space, without getting entangled with Unicode encoding.
 
 == Sample tutorial programs
 
-=== 1. Thamizh script letters
-(and string of Thamizh letters)
+=== 1. Thamizh script letters (and strings of Thamizh letters)
 
-Tutorial: `./Letters`
+Samples: `./Letters`
 
 Introduces `script.String` and `script.Letter` abstraction models.
 
-=== 2. விகுதி (Suffix) match and trim
-Tutorial: `./Suffixes`
+=== 2. Suffix (விகுதி) match and trim
+Samples: `./Suffixes`
 
-Introduces sub-string query and trim operations on `script.String` abstraction model.
+Introduces string manipulation operations on `script.String` abstraction model.
 
-=== 3. Syllables
-Tutorial: `./Syllables`
+=== 3. Syllables (Syl-la-bi-fi-ca-tion)
+Samples: `./Syllables`
 
 Introduces getting syllables (_unbroken sounds_) from given `script.String`.
 
-In general, syllables attempt to describe the way words of a language are pronounced (or spelled).
+In general, syllabification attempts to describe the way words of a language may be easily pronounced.
 
-.Furthermore it appears that in Thamizh,
-- Spelling == Pronunciation  +
- (_in terms of these syllabic forms_).
+[%autowidth]
+[cols=","]
+|===
+| Word | Syllabified format
 
-//
-Note:: This realization helped me greatly in Thamizh comprehension.
-It made reading, speaking, listening, and even writing Thamizh possible for me.
-(_Though I am yet to gain sufficient fluency in almost all these areas of comprehension_)
+| தமிழ் | த-மிழ்
+| இலக்கணம் | இ-லக்-க-ணம்
+| தமிழிலக்கணம் | த-மி-ழி-லக்-க-ணம்
+| விடுதலை | வி-டு-த-லை
+| நடவடிக்கை | ந-ட-வ-டிக்-கை
+| காரணமென்னவென்றால் | கா-ர-ண-மென்-ன-வென்-றால்
+| ஒட்டுமொத்தமாகப்பார்த்துக்கொண்டிருந்தாள் | ஒட்-டு-மொத்-த-மா-கப்-பார்த்-துக்-கொண்-டி-ருந்-தாள்
+|===
+
+Note:: This syllabification should further help non-Thamizh learners to read, speak, and finally even write Thamizh effortlessly. (_...once they have mastered the 30 primary letters, and 216 composite derivative letters..._)

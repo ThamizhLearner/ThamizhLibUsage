@@ -7,16 +7,30 @@ import (
 )
 
 func main() {
-	ustr := "தமிழ்"
-	fmt.Printf("Given Unicode string: %s\n", ustr)
-	string2letters(ustr)
+	unicodeStringDecode()
 
-	fmt.Println("\nLetter split")
-	letterAnalysis(ustr)
+	fmt.Println()
+	string2letters("தமிழ்")
+
+	fmt.Println()
+	letterAnalysis("தமிழ்")
+}
+
+func unicodeStringDecode() {
+	fmt.Println("Sample: Decoding unicode string")
+
+	s, ok := script.Decode("தமிழ்")
+	if !ok {
+		fmt.Println("Decode fail")
+		return
+	}
+	fmt.Println(s)
 }
 
 // Get each Thamizh letter from Thamizh string
 func string2letters(ustr string) {
+	fmt.Println("Sample: Thamizh letters from decode string")
+
 	str := script.MustDecode(ustr)
 	fmt.Printf("Thamizh string      : %s\n", str)
 
@@ -27,8 +41,9 @@ func string2letters(ustr string) {
 }
 
 func letterAnalysis(ustr string) {
-	str := script.MustDecode(ustr)
+	fmt.Println("Sample: Split vowelized-consonant into consonant and vowel letters")
 
+	str := script.MustDecode(ustr)
 	for letter := range str.Letters() {
 		fmt.Print(letter)
 		if letter.IsCV() {

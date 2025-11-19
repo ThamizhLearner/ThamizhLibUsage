@@ -28,7 +28,7 @@ In general, syllabification attempts to quickly describe the way words of a lang
 [%autowidth]
 [cols=","]
 |===
-| String (_of Thamizh letters_) | Syllabified pronunciation
+| String (_of Thamizh letters_) | Syllabified pronunciation hint
 
 | தமிழ் | த-மிழ்
 | இலக்கணம் | இ-லக்-க-ணம்

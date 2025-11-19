@@ -1,7 +1,7 @@
 = Thamizh (தமிழ்) script letter library samples
 
 == Introduction (அறிமுகம்)
-Sample programs using the Thamizh library (github.com/ThamizhLearner/Thamizh).
+Sample programs using the Thamizh library (`github.com/ThamizhLearner/Thamizh`).
 
 Note:: The Thamizh library facilitates working entirely in the Thamizh script letter space, without getting entangled with Unicode encoding.
 
@@ -18,17 +18,17 @@ Samples: `./Suffixes`
 
 Introduces string manipulation operations on `script.String` abstraction model.
 
-=== 3. Syllables (Syl-la-bi-fi-ca-tion)
+=== 3. Syllables (Syllabification | Syl-la-bi-fi-ca-tion)
 Samples: `./Syllables`
 
 Introduces getting syllables (_unbroken sounds_) from given `script.String`.
 
-In general, syllabification attempts to describe the way words of a language may be easily pronounced.
+In general, syllabification attempts to quickly describe the way words of a language may be easily pronounced.
 
 [%autowidth]
 [cols=","]
 |===
-| Word | Syllabified format
+| String (_of Thamizh letters_) | Syllabified pronunciation
 
 | தமிழ் | த-மிழ்
 | இலக்கணம் | இ-லக்-க-ணம்

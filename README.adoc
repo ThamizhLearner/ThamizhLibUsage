@@ -13,7 +13,7 @@ Samples: `./Letters`
 
 Introduces `script.String` and `script.Letter` abstraction models.
 
-=== 2. Suffix (விகுதி) match and trim
+=== 2. String trim & join
 Samples: `./Suffixes`
 
 Introduces string manipulation operations on `script.String` abstraction model.

@@ -19,7 +19,7 @@ func testSubstitution() {
 	matchTrim := script.MustDecode("ங்கள்")
 	substitute := script.MustDecode("ம்")
 
-	s2, ok := s.ReplaceEnd(matchTrim, substitute)
+	s2, ok := s.TailReplaced(matchTrim, substitute)
 	if !ok {
 		fmt.Println("Trim match not found")
 		return
@@ -31,14 +31,14 @@ func testAppend() {
 	s := script.MustDecode("தமிழ்")
 	s2 := script.MustDecode("இலக்கணம்")
 
-	fmt.Printf("%s + %s = %s\n", s, s2, s.Append(s2))
+	fmt.Printf("%s + %s = %s\n", s, s2, s.Appended(s2))
 }
 
 func testTrim() {
 	s := script.MustDecode("தமிழிலக்கணம்")
 	trim := script.MustDecode("இலக்கணம்")
 
-	t, ok := s.TrimEnd(trim)
+	t, ok := s.TailTrimmed(trim)
 	if !ok {
 		fmt.Println("Trim match not found")
 		return
